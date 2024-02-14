@@ -1,0 +1,41 @@
+body {
+	box-sizing: border-box;
+}
+
+.nav {
+	background-color: rgb(175, 181, 181);
+}
+
+.nav-item2 {
+	padding-left: 700px;
+}
+
+.container-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-auth {
+	display: flex;
+	margin-top: 150px;
+	gap: 50px;
+}
+
+.sign-in,
+.sign-up {
+	background-color: rgb(77, 151, 185);
+	width: 150px;
+	height: 70px;
+	text-align: center;
+	border-radius: 8px;
+	border: none;
+}
+
+.a-sign-in,
+.a-sign-up {
+	text-decoration: none;
+	width: 150px;
+	color: black;
+}
