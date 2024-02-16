@@ -15,17 +15,16 @@ module.exports = function Layout({ title, username, children }) {
         <ul className="nav">
           <li className="nav-item1">
             <a className="nav-link" href="/">
-              Главная
+              Eat me!
             </a>
-            <li>Eat me!</li>
           </li>
           {username ? (
             <>
-              <li className="nav-item2">
+              <span className="nav-item2">
                 <a className="nav-link" href="/private">
                   Личный кабинет, {username}
                 </a>
-              </li>
+              </span>
               <li className="nav-item3">
                 <a className="nav-link" href="/signout">
                   Выйти

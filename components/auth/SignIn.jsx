@@ -4,7 +4,7 @@ const Layout = require('../Layout');
 module.exports = function Main({ username }) {
   return (
     <Layout username={username}>
-      <h1>Вход на сайт</h1>
+      <h1>Войти в личный кабинет:</h1>
       <form id="signinForm" method="POST" action="/signin">
         <div className="form-group">
           <label htmlFor="username">
