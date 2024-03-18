@@ -27,6 +27,5 @@ module.exports = {
     'linebreak-style': 0,
     'comma-dangle': ['error', 'only-multiline'],
     'no-unused-vars': 0,
-    'import/extensions': 0,
   },
 };

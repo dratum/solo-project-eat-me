@@ -1,20 +1,24 @@
 const programs = [
   {
-    name: 'Программа питания №1',
-    user_id,
-    description: 'Сбалансированное питание для поддержания веса',
-    composition_id: 1,
-    kcal: 2000,
+    name: 'program №1',
+    description: 'Вкусный рацион №1',
+    breakfast_id: 1,
+    lunch_id: 1,
+    dinner_id: 1,
+    kcal: 1600,
     createdAt: new Date(),
     updatedAt: new Date(),
   },
   {
-    name: 'Программа питания №2',
-    user_id,
-    description: 'Сбалансированное питание для похудения',
-    composition_id: 2,
-    kcal: 1400,
+    name: 'program №2',
+    description: 'Вкусный рацион №2',
+    breakfast_id: 2,
+    lunch_id: 2,
+    dinner_id: 2,
+    kcal: 1600,
     createdAt: new Date(),
     updatedAt: new Date(),
   },
 ];
+
+module.exports = programs;

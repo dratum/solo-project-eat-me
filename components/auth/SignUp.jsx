@@ -1,9 +1,9 @@
 const React = require('react');
 const Layout = require('../Layout');
 
-module.exports = function Main({ username }) {
+module.exports = function SignUp() {
   return (
-    <Layout username={username}>
+    <Layout>
       <h1>Регистрация</h1>
       <form id="signupForm" method="POST" action="/signup">
         <div className="form-group">

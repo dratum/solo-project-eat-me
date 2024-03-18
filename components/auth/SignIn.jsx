@@ -1,7 +1,7 @@
 const React = require('react');
 const Layout = require('../Layout');
 
-module.exports = function Main({ username }) {
+module.exports = function SignIn({ username }) {
   return (
     <Layout username={username}>
       <h1>Войти в личный кабинет:</h1>
