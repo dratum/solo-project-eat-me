@@ -1,15 +1,26 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('breakfasts', {
+    await queryInterface.createTable('Breakfast_programs', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      condition: {
-        type: Sequelize.STRING,
+      breakfast_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'breakfasts',
+          key: 'id',
+        },
+      },
+      program_id: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Programs',
+          key: 'id',
+        },
       },
       createdAt: {
         allowNull: false,
@@ -22,6 +33,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('breakfasts');
+    await queryInterface.dropTable('Breakfast_programs');
   },
 };

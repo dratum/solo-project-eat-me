@@ -68,6 +68,7 @@ router
         username,
         password: hashedPassword,
         email,
+        role: 'user',
       });
       req.session.user = serializeUser(user);
     } catch (err) {

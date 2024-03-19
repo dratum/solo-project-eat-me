@@ -7,10 +7,7 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate({ Program }) {
-      this.hasMany(Program, { foreignKey: 'user_id' });
-      // define association here
-    }
+    static associate() {}
   }
   User.init(
     {
@@ -24,7 +21,13 @@ module.exports = (sequelize, DataTypes) => {
         len: [3, 30],
         is: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
       },
-      password: { type: DataTypes.STRING, len: [5, 20] },
+      password: {
+        type: DataTypes.STRING,
+        len: [5, 20],
+      },
+      role: {
+        type: DataTypes.STRING,
+      },
     },
     {
       sequelize,

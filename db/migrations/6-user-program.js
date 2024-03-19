@@ -1,15 +1,12 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('Programs', {
+    await queryInterface.createTable('User_programs', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
-      },
-      name: {
-        type: Sequelize.STRING,
       },
       user_id: {
         type: Sequelize.INTEGER,
@@ -18,32 +15,12 @@ module.exports = {
           key: 'id',
         },
       },
-      description: {
-        type: Sequelize.STRING,
-      },
-      breakfast_id: {
+      program_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: 'breakfasts',
+          model: 'Programs',
           key: 'id',
         },
-      },
-      lunch_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: 'lunches',
-          key: 'id',
-        },
-      },
-      dinner_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: 'dinners',
-          key: 'id',
-        },
-      },
-      kcal: {
-        type: Sequelize.INTEGER,
       },
       createdAt: {
         allowNull: false,
@@ -56,6 +33,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('Programs');
+    await queryInterface.dropTable('User_programs');
   },
 };

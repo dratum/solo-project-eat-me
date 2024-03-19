@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const userMiddleware = require('../middlewares/user');
 const errorMiddleware = require('../middlewares/error');
-const authMiddleware = require('../middlewares/auth');
+
 const ssr = require('../middlewares/ssr');
 
 const FileStore = sessionFileStore(session);
@@ -36,7 +36,6 @@ const serverConfig = (app) => {
       },
     })
   );
-  //   app.use(authMiddleware);
   app.use(userMiddleware);
   app.use(ssr);
   app.use(errorMiddleware);
