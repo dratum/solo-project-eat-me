@@ -1,6 +1,6 @@
 const express = require('express');
 
-const Main = require('../../components/Main');
+const Main = require('../../components/pages/Main');
 
 const router = express.Router();
 

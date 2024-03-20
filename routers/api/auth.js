@@ -33,12 +33,15 @@ router
     const { username, password } = req.body;
     try {
       // Пытаемся сначала найти пользователя в БД
-      const user = await User.findOne({
-        where: {
-          username,
-        },
-        raw: true,
-      });
+      const user = JSON.parse(
+        JSON.stringify(
+          await User.findOne({
+            where: {
+              username,
+            },
+          })
+        )
+      );
       if (!user) {
         return failAuth(res);
       }

@@ -1,9 +1,9 @@
 const React = require('react');
 const Layout = require('../Layout');
 
-module.exports = function SignIn({ username }) {
+module.exports = function SignIn({ username, title }) {
   return (
-    <Layout username={username}>
+    <Layout username={username} title={title}>
       <h1>Войти в личный кабинет:</h1>
       <form id="signinForm" method="POST" action="/signin">
         <div className="form-group">
