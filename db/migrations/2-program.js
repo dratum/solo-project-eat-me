@@ -1,15 +1,31 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('breakfasts', {
+    await queryInterface.createTable('Programs', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      condition: {
+      name: {
         type: Sequelize.STRING,
+      },
+      breakfast: {
+        type: Sequelize.STRING,
+      },
+      lunch: {
+        type: Sequelize.STRING,
+      },
+      dinner: {
+        type: Sequelize.STRING,
+      },
+      description: {
+        type: Sequelize.STRING,
+      },
+
+      kcal: {
+        type: Sequelize.INTEGER,
       },
       createdAt: {
         allowNull: false,
@@ -22,6 +38,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('breakfasts');
+    await queryInterface.dropTable('Programs');
   },
 };

@@ -14,4 +14,4 @@ module.exports = function ProgramPage({ title, breakfast, lunch, dinner }) {
   );
 };
 
-//TODO: Писать сиды для наполнения программ приемами пищи
+// TODO: Писать сиды для наполнения программ приемами пищи

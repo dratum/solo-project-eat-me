@@ -31,7 +31,7 @@ const serverConfig = (app) => {
       // Если false, куки появляются только при установке req.session
       saveUninitialized: false,
       cookie: {
-        maxAge: 1000 * 60 * 60 * 12,
+        maxAge: 1000 * 60 * 1500,
         httpOnly: true,
       },
     })

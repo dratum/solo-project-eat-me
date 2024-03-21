@@ -12,6 +12,9 @@ module.exports = (sequelize, DataTypes) => {
   Program.init(
     {
       name: DataTypes.STRING,
+      breakfast: DataTypes.STRING,
+      lunch: DataTypes.STRING,
+      dinner: DataTypes.STRING,
       description: DataTypes.STRING,
       kcal: DataTypes.INTEGER,
     },
