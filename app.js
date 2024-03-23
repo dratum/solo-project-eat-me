@@ -9,6 +9,8 @@ const authRouter = require('./routers/views/auth');
 const authApiRouter = require('./routers/api/auth');
 const listProgramsRouter = require('./routers/views/listProgram.router');
 const programRouter = require('./routers/views/program.router');
+const privateRouter = require('./routers/views/private.router');
+const addFavRouter = require('./routers/api/addToFav.router');
 
 const app = express();
 
@@ -20,8 +22,10 @@ app.use(
   authRouter,
   authApiRouter,
   listProgramsRouter,
-  programRouter
+  programRouter,
+  privateRouter
 );
+app.use('/api', addFavRouter);
 
 const port = process.env.PORT ?? 3000;
 app.listen(port, () => {

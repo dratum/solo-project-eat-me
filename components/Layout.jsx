@@ -2,7 +2,7 @@ const React = require('react');
 
 module.exports = function Layout({ title, username, children }) {
   return (
-    <html lang="ru">
+    <html lang="en">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
