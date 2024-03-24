@@ -4,7 +4,7 @@ const { User_program } = require('../../db/models');
 const { Program } = require('../../db/models');
 
 router.get('/private', async (req, res) => {
-  const { username, id } = res.locals;
+  const { username, id } = req.session.user;
 
   const programsArr = await User_program.findAll({
     where: { user_id: id },
