@@ -24,6 +24,17 @@ module.exports = function Layout({ title, username, children }) {
               Eat me!
             </a>
           </li>
+          <li>
+            <a href="/signin" className="nav-link">
+              Вход
+            </a>
+          </li>
+          <li>
+            <a href="/signup" className="nav-link">
+              Зарегистрироваться
+            </a>
+          </li>
+
           {username ? (
             <>
               <span className="nav-item2">
