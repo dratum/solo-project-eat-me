@@ -12,7 +12,7 @@ module.exports = function Layout({ title, username, children }) {
           rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></link>
         <link rel="stylesheet" href="/css/styles.css" />
       </head>
@@ -24,24 +24,14 @@ module.exports = function Layout({ title, username, children }) {
               Eat me!
             </a>
           </li>
-          <li>
-            <a href="/signin" className="nav-link">
-              Вход
-            </a>
-          </li>
-          <li>
-            <a href="/signup" className="nav-link">
-              Зарегистрироваться
-            </a>
-          </li>
 
           {username ? (
             <>
-              <span className="nav-item2">
+              <li className="nav-item2">
                 <a className="nav-link" href="/private">
                   Личный кабинет - {username}
                 </a>
-              </span>
+              </li>
               <li className="nav-item3">
                 <a className="nav-link" href="/signout">
                   Выйти
@@ -49,7 +39,18 @@ module.exports = function Layout({ title, username, children }) {
               </li>
             </>
           ) : (
-            <></>
+            <>
+              <li className="nav-item2">
+                <a href="/signin" className="nav-link">
+                  Вход
+                </a>
+              </li>
+              <li className="nav-item3">
+                <a href="/signup" className="nav-link">
+                  Зарегистрироваться
+                </a>
+              </li>
+            </>
           )}
         </ul>
         <div className="container-main">{children}</div>

@@ -1,9 +1,9 @@
 const React = require('react');
 const Layout = require('../Layout');
 
-module.exports = function ProgramPage({ program, usercheck }) {
+module.exports = function ProgramPage({ program, usercheck, username }) {
   return (
-    <Layout title={program.name}>
+    <Layout title={program.name} username={username}>
       <div id="wrap-program">
         <a href="/programs"> &lt;-- Назад к выбору программ питания</a>
         <div>Описание:{program.description}</div>
@@ -12,7 +12,9 @@ module.exports = function ProgramPage({ program, usercheck }) {
         <div>Обед:{program.lunch} </div>
         <div>Ужин:{program.dinner} </div>
         {usercheck ? (
-          <span>Добавлено в избранное</span>
+          <span>
+            Уже добавлено в <a href="/private">Избранное</a>{' '}
+          </span>
         ) : (
           <button data-id={program.id} id="addBtn">
             Добавить в Избранное

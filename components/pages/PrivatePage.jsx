@@ -10,7 +10,7 @@ module.exports = function Private({ title, username, userPrograms = [] }) {
           <span>Программы питания</span>
           {userPrograms.map((program) => (
             <div key={program.id} className="program-in-profile">
-              <a href={`/program/${program.id}`}>{program.name}</a>
+              <a href={`/programs/${program.id}`}>{program.name}</a>
               <button data-id={program.id} className="delete-btn">
                 Удалить
               </button>
