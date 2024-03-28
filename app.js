@@ -12,6 +12,8 @@ const programRouter = require('./routers/views/program.router');
 const privateRouter = require('./routers/views/private.router');
 const addFavRouter = require('./routers/api/addToFav.router');
 const deleteProgramRouter = require('./routers/api/deleteProgramInProfile');
+const listProductsRouter = require('./routers/views/listProducts.router');
+const listRecipeRouter = require('./routers/views/listRecipes.router');
 
 const app = express();
 
@@ -24,7 +26,9 @@ app.use(
   authApiRouter,
   listProgramsRouter,
   programRouter,
-  privateRouter
+  privateRouter,
+  listProductsRouter,
+  listRecipeRouter
 );
 app.use('/api', addFavRouter, deleteProgramRouter);
 

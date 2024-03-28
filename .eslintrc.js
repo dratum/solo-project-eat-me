@@ -29,6 +29,6 @@ module.exports = {
     'no-unused-vars': 0,
     'import/no-unresolved': 0,
     'import/extensions': 0,
-    properties: 'never',
+    properties: '0',
   },
 };

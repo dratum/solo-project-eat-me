@@ -11,7 +11,9 @@ module.exports = function ProgramPage({ program, usercheck, username }) {
         <div>Завтрак: {program.breakfast}</div>
         <div>Обед:{program.lunch} </div>
         <div>Ужин:{program.dinner} </div>
-        {usercheck ? (
+        {!username ? (
+          <></>
+        ) : usercheck ? (
           <span>
             Уже добавлено в <a href="/private">Избранное</a>{' '}
           </span>

@@ -18,7 +18,7 @@ router.get('/programs/:id', async (req, res) => {
       res.renderComponent(ProgramPage, { program, usercheck, username })
     );
   } else {
-    res.send(res.renderComponent(ProgramPageForAnonym, { program }));
+    res.send(res.renderComponent(ProgramPage, { program }));
   }
 });
 

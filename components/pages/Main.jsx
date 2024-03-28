@@ -4,17 +4,26 @@ const Layout = require('../Layout');
 module.exports = function Main({ title, username }) {
   return (
     <Layout title={title} username={username}>
-      <h1 className="">Eat me!</h1>
-
+      <h1 className="mainpage-title">Eat me!</h1>
       <div className="catalog-container">
-        <div className="full-product-card">
-          <a href="/programs">Готовые программы питания</a>
+        <div className="catalog-container__programs">
+          <a href="/programs" className="catalog-container__link">
+            <span className="catalog-container__link_text">
+              Готовые программы питания
+            </span>
+          </a>
         </div>
-        <div className="product-list-card">
-          <a href="/list-products">Список продуктов</a>
+        <div className="catalog-container__products">
+          <a href="/list-products" className="catalog-container__link">
+            <span className="catalog-container__link_text">
+              Список продуктов
+            </span>
+          </a>
         </div>
-        <div className="search-product">
-          <a href="/search-products">Поиск блюда</a>
+        <div className="catalog-container__recipes">
+          <a href="/list-recipes" className="catalog-container__link">
+            <span className="catalog-container__link_text">Поиск блюда</span>
+          </a>
         </div>
       </div>
     </Layout>
