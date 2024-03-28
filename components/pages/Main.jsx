@@ -13,10 +13,10 @@ module.exports = function Main({ title, username }) {
             </span>
           </a>
         </div>
-        <div className="catalog-container__products">
-          <a href="/list-products" className="catalog-container__link">
+        <div className="catalog-container__food">
+          <a href="/list-food" className="catalog-container__link">
             <span className="catalog-container__link_text">
-              Список продуктов
+              Список продуктов питания
             </span>
           </a>
         </div>

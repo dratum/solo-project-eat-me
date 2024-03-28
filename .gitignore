@@ -3,9 +3,12 @@
 # Created by https://www.gitignore.io/api/windows,visualstudiocode,dotenv,node
 # Edit at https://www.gitignore.io/?templates=windows,visualstudiocode,dotenv,node
 
+
+# sessions #
+sessions
+
 ### dotenv ###
 .env
-
 ### Node ###
 # Logs
 logs

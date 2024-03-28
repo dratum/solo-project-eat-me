@@ -12,7 +12,7 @@ const programRouter = require('./routers/views/program.router');
 const privateRouter = require('./routers/views/private.router');
 const addFavRouter = require('./routers/api/addToFav.router');
 const deleteProgramRouter = require('./routers/api/deleteProgramInProfile');
-const listProductsRouter = require('./routers/views/listProducts.router');
+const listFoodRouter = require('./routers/views/listFood.router');
 const listRecipeRouter = require('./routers/views/listRecipes.router');
 const recipeRouter = require('./routers/views/recipe.router');
 const deleteRecipeRouter = require('./routers/api/deleteRecipeInProfile');
@@ -29,7 +29,7 @@ app.use(
   listProgramsRouter,
   programRouter,
   privateRouter,
-  listProductsRouter,
+  listFoodRouter,
   listRecipeRouter,
   recipeRouter
 );
