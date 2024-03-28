@@ -14,16 +14,25 @@ module.exports = function ProgramPage({ program, usercheck, username }) {
         {!username ? (
           <></>
         ) : usercheck ? (
-          <span>
-            Уже добавлено в <a href="/private">Избранное</a>{' '}
+          <span className="notification-text">
+            Уже добавлено в{' '}
+            <a href="/private" className="notification-text__link">
+              Избранное
+            </a>{' '}
           </span>
         ) : (
-          <button data-id={program.id} id="addBtn">
-            Добавить в Избранное
+          <button
+            data-id={program.id}
+            id="addBtn"
+            className="btn-for-add-to-fav"
+          >
+            <span className="btn-for-add-to-fav__text">
+              Добавить в Избранное
+            </span>
           </button>
         )}
       </div>
-      <script defer src="/js/addToFav.js" />
+      <script defer src="/js/addToFavProgram.js" />
     </Layout>
   );
 };

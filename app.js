@@ -14,6 +14,8 @@ const addFavRouter = require('./routers/api/addToFav.router');
 const deleteProgramRouter = require('./routers/api/deleteProgramInProfile');
 const listProductsRouter = require('./routers/views/listProducts.router');
 const listRecipeRouter = require('./routers/views/listRecipes.router');
+const recipeRouter = require('./routers/views/recipe.router');
+const deleteRecipeRouter = require('./routers/api/deleteRecipeInProfile');
 
 const app = express();
 
@@ -28,9 +30,10 @@ app.use(
   programRouter,
   privateRouter,
   listProductsRouter,
-  listRecipeRouter
+  listRecipeRouter,
+  recipeRouter
 );
-app.use('/api', addFavRouter, deleteProgramRouter);
+app.use('/api', addFavRouter, deleteProgramRouter, deleteRecipeRouter);
 
 const port = process.env.PORT ?? 3000;
 app.listen(port, () => {
