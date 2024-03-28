@@ -16,6 +16,7 @@ const listFoodRouter = require('./routers/views/listFood.router');
 const listRecipeRouter = require('./routers/views/listRecipes.router');
 const recipeRouter = require('./routers/views/recipe.router');
 const deleteRecipeRouter = require('./routers/api/deleteRecipeInProfile');
+const foodRouter = require('./routers/views/food.router');
 
 const app = express();
 
@@ -31,7 +32,8 @@ app.use(
   privateRouter,
   listFoodRouter,
   listRecipeRouter,
-  recipeRouter
+  recipeRouter,
+  foodRouter
 );
 app.use('/api', addFavRouter, deleteProgramRouter, deleteRecipeRouter);
 
