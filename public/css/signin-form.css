@@ -1,0 +1,29 @@
+.signin-form {
+	display: flex;
+	flex-direction: column;
+	font-size: small;
+	color: #274c5b;
+	align-items: flex-end;
+	background-color: rgba(128, 128, 128, 0.356);
+	padding: 20px;
+	border-radius: 6px;
+}
+
+.title-of-signin-form {
+	color: #274c5b;
+	margin: 25px;
+}
+
+.signin-form__input-login,
+.signin-form__input-password {
+	border-radius: 6px;
+	border: none;
+}
+
+.signin-form__button {
+	margin: 0 auto;
+}
+
+.text-question {
+	color: #274c5b;
+}

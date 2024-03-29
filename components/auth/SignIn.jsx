@@ -13,6 +13,7 @@ module.exports = function SignIn({ username, title }) {
       >
         <label htmlFor="username">
           Логин:
+          <br />
           <input
             id="username"
             className="signin-form__input-login"
@@ -28,6 +29,7 @@ module.exports = function SignIn({ username, title }) {
 
         <label htmlFor="password">
           Пароль:
+          <br />
           <input
             className="signin-form__input-password"
             id="password"

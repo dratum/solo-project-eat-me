@@ -1,0 +1,24 @@
+.signup-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: small;
+	color: #274c5b;
+	align-items: center;
+	background-color: rgba(128, 128, 128, 0.356);
+	padding: 20px;
+	border-radius: 6px;
+	width: 250px;
+}
+
+.title-of-signun-form {
+	color: #274c5b;
+	margin: 25px;
+}
+
+.signup-form__input-login,
+.signup-form__input-email,
+.signup-form__input-password {
+	border-radius: 6px;
+	border: none;
+}

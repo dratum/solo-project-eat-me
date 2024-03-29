@@ -4,7 +4,7 @@ const Layout = require('../Layout');
 module.exports = function SignUp({ title, username }) {
   return (
     <Layout title={title} username={username}>
-      <h3>Регистрация</h3>
+      <h3 className="title-of-signun-form">Регистрация</h3>
       <form
         id="signupForm"
         className="signup-form"
@@ -12,7 +12,7 @@ module.exports = function SignUp({ title, username }) {
         action="/signup"
       >
         <label htmlFor="username">
-          Логин:
+          Логин: <br />
           <input
             id="username"
             className="signup-form__input-login"
@@ -27,6 +27,7 @@ module.exports = function SignUp({ title, username }) {
         </label>
         <label htmlFor="email">
           E-mail:
+          <br />
           <input
             id="email"
             className="signup-form__input-email"
@@ -38,6 +39,7 @@ module.exports = function SignUp({ title, username }) {
         </label>
         <label htmlFor="password">
           Пароль:
+          <br />
           <input
             id="password"
             className="signup-form__input-password"

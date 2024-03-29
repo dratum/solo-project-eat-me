@@ -38,12 +38,12 @@
 .delete-btn-program,
 .delete-btn-recipe {
 	border: none;
-	border-radius: 8px;
+	border-radius: 4px;
 	width: 100px;
 	height: 25px;
 	text-align: center;
 	padding: 0 auto;
-	background-color: #e40707ad;
+	background-color: #e40707b6;
 	font-size: small;
 	color: #274c5b;
 }

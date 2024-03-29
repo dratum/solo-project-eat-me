@@ -26,6 +26,8 @@ module.exports = function Layout({ title, username, children }) {
         <link rel="stylesheet" href="/css/recipe-page.css" />
         <link rel="stylesheet" href="/css/recipe-list.css" />
         <link rel="stylesheet" href="/css/private-page.css" />
+        <link rel="stylesheet" href="/css/signin-form.css" />
+        <link rel="stylesheet" href="/css/signup-form.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
