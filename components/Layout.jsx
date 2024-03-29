@@ -21,6 +21,8 @@ module.exports = function Layout({ title, username, children }) {
         <link rel="stylesheet" href="/css/main-page.css" />
         <link rel="stylesheet" href="/css/programs.css" />
         <link rel="stylesheet" href="/css/program-page.css" />
+        <link rel="stylesheet" href="/css/list-food.css" />
+        <link rel="stylesheet" href="/css/food-page.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link

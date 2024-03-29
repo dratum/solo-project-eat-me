@@ -1,0 +1,15 @@
+.food-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 34%;
+}
+
+.food-card__link,
+.food-card__link:active {
+	color: #525c60;
+}
+
+.food-card__link:hover {
+	text-decoration: none;
+}

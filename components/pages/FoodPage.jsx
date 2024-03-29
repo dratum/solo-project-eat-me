@@ -4,13 +4,14 @@ const Layout = require('../Layout');
 module.exports = function FoodPage({ food, username }) {
   return (
     <Layout title={food.name} username={username}>
+      <a href="/list-food" className="navigation-link_esc">
+        <span className="navigation-link_text">
+          &lt;- Вернуться к выбору продуктов
+        </span>
+      </a>
+      <h2 className="food-title">{food.name}</h2>
+
       <div className="food-container">
-        <a href="/list-food" className="navigation-link_esc">
-          <span className="navigation-link_text">
-            &lt;- Вернуться к выбору продуктов
-          </span>
-        </a>
-        <h2 className="food-title">{food.name}</h2>
         <div className="food-container__section_description">
           <span className="food-container__section_description_text">
             {food.description}

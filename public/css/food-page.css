@@ -1,0 +1,27 @@
+.food-container {
+	display: flex;
+	gap: 20px;
+}
+
+.food-container__section_description {
+	display: flex;
+	align-items: center;
+	width: 350px;
+	height: 150px;
+	background-color: #4d4d4d50;
+	border-radius: 8px;
+	text-align: left;
+}
+.food-container__section_description_text,
+.food-title {
+	color: #274c5b;
+}
+
+.food-container__section_picture {
+}
+
+.food-container__section_picture_image {
+	width: 70%;
+
+	border-radius: 8px;
+}
