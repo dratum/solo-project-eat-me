@@ -1,0 +1,36 @@
+.programs-list {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.program-card {
+	display: flex;
+	width: 400px;
+	height: 200px;
+	border-radius: 8px;
+	align-content: center;
+	justify-content: flex-end;
+	align-items: flex-start;
+	flex-direction: column;
+	transition: all 0.2s ease-in-out;
+	position: relative;
+	overflow: hidden;
+	background-image: url("https://optim.tildacdn.com/tild3836-3735-4363-b532-366439356636/-/format/webp/___.png");
+	background-size: 460px;
+}
+
+.program-card:hover {
+	transform: scale(1.04);
+}
+
+.program-card__link,
+.program-card__link:hover {
+	margin: 0 0 5px 15px;
+	color: #525c60;
+}
+
+.navigation-link_esc,
+.navigation-link_esc:hover {
+	color: #7eb693;
+}

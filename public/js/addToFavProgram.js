@@ -16,7 +16,8 @@ if (btn) {
       btn.remove();
       const div = document.getElementById('wrap-program');
       const notification = document.createElement('span');
-      notification.innerText = 'Добавлено в избранное';
+      notification.classList.add('notification-text');
+      notification.innerText = 'Добавлено в Избранное';
       div.appendChild(notification);
     } catch (error) {
       console.log('message:', error);
