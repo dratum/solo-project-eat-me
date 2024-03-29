@@ -4,7 +4,7 @@ const Layout = require('../Layout');
 module.exports = function SignUp({ title, username }) {
   return (
     <Layout title={title} username={username}>
-      <h3 className="title-of-signun-form">Регистрация</h3>
+      <h3 className="title-of-signun-form">Регистрация:</h3>
       <form
         id="signupForm"
         className="signup-form"
