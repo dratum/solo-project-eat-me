@@ -13,3 +13,8 @@
 .food-card__link:hover {
 	text-decoration: none;
 }
+
+.title-food {
+	color: #274c5b;
+	margin: 25px;
+}

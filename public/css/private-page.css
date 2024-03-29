@@ -1,0 +1,54 @@
+.title-private {
+	color: #274c5b;
+	margin: 25px;
+	margin-right: 900px;
+}
+
+.profile-container {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 20px;
+}
+
+.profile-container__text {
+	font-size: large;
+	color: #7eb693;
+	margin: 15px;
+}
+
+.profile-container__programs,
+.profile-container__recipes {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+}
+
+.profile-container__programs_in-profile,
+.profile-container__recipes_in-profile {
+	display: flex;
+	flex-direction: column;
+	margin: 15px;
+}
+
+.profile__image {
+	width: 500px;
+	border-radius: 8px;
+}
+
+.delete-btn-program,
+.delete-btn-recipe {
+	border: none;
+	border-radius: 8px;
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	padding: 0 auto;
+	background-color: #e40707ad;
+	font-size: small;
+	color: #274c5b;
+}
+.text-name,
+.text-name:hover {
+	color: #274c5b;
+	text-decoration: none;
+}
