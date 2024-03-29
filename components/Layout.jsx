@@ -23,8 +23,10 @@ module.exports = function Layout({ title, username, children }) {
         <link rel="stylesheet" href="/css/program-page.css" />
         <link rel="stylesheet" href="/css/list-food.css" />
         <link rel="stylesheet" href="/css/food-page.css" />
+        <link rel="stylesheet" href="/css/recipe-page.css" />
+        <link rel="stylesheet" href="/css/recipe-list.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap"
           rel="stylesheet"

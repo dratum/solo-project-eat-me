@@ -7,7 +7,7 @@ module.exports = function ListRecipes({ title, username, recipes = [] }) {
       <a href="/" className="navigation-link_esc">
         &lt;- Вернуться в главное меню
       </a>
-      <h2 className="title-recipes">Доступные рецепты блюд:</h2>
+      <h3 className="title-recipes">Доступные рецепты блюд:</h3>
       <div className="recipes-list">
         {recipes.map((recipe) => (
           <div key={recipe.id} className="recipe-card">

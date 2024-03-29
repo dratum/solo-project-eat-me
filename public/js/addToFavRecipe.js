@@ -16,6 +16,7 @@ if (btn) {
       btn.remove();
       const div = document.querySelector('.recipe-container');
       const notification = document.createElement('span');
+      notification.classList.add('notification-text');
       notification.innerText = 'Добавлено в избранное';
       div.appendChild(notification);
     } catch (error) {
