@@ -1,0 +1,26 @@
+.header-container__navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	color: #274c5b;
+}
+
+.navbar__nav-item1 {
+	margin-right: 800px;
+}
+
+a.nav-link:hover,
+a.nav-link:active,
+a.nav-link {
+	text-decoration: none;
+	color: #274c5b;
+}
+
+a.nav-link:hover {
+	border-bottom: 3px solid;
+}
+
+.header-container__navbar_logo {
+	width: 40px;
+}

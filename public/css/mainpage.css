@@ -1,0 +1,74 @@
+.container-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.catalog-container {
+	display: flex;
+	gap: 25px;
+}
+
+.catalog-container__programs,
+.catalog-container__food,
+.catalog-container__recipes {
+	width: 400px;
+	height: 200px;
+	border-radius: 8px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	flex-direction: column;
+	transition: all 0.2s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+
+.catalog-container__programs:hover,
+.catalog-container__recipes:hover,
+.catalog-container__food:hover {
+	transform: scale(1.04);
+}
+
+.catalog-container__link:hover,
+.catalog-container__link:active,
+.catalog-container__link {
+	text-decoration: none;
+	color: #525c60;
+}
+
+.catalog-container__programs_image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -65%);
+	width: 400px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.catalog-container__food_image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -65%);
+	width: 400px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.catalog-container__recipes_image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -65%);
+	width: 400px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.catalog-container__link_text {
+	position: relative;
+	padding-top: 50px;
+}

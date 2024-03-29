@@ -1,4 +1,6 @@
 const React = require('react');
+const Header = require('./Header');
+const user = require('../middlewares/user');
 
 module.exports = function Layout({ title, username, children }) {
   return (
@@ -15,44 +17,18 @@ module.exports = function Layout({ title, username, children }) {
           crossOrigin="anonymous"
         ></link>
         <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/mainpage.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap"
+          rel="stylesheet"
+        />
       </head>
 
       <body>
-        <ul className="nav">
-          <li className="nav-item1">
-            <a className="nav-link" href="/">
-              Eat me!
-            </a>
-          </li>
-
-          {username ? (
-            <>
-              <li className="nav-item2">
-                <a className="nav-link" href="/private">
-                  Личный кабинет - {username}
-                </a>
-              </li>
-              <li className="nav-item3">
-                <a className="nav-link" href="/signout">
-                  Выйти
-                </a>
-              </li>
-            </>
-          ) : (
-            <>
-              <li className="nav-item2">
-                <a href="/signin" className="nav-link">
-                  Вход
-                </a>
-              </li>
-              <li className="nav-item3">
-                <a href="/signup" className="nav-link">
-                  Зарегистрироваться
-                </a>
-              </li>
-            </>
-          )}
-        </ul>
+        <Header username={username} />
         <div className="container-main">{children}</div>
         <script
           src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

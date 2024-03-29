@@ -4,40 +4,50 @@ const Layout = require('../Layout');
 module.exports = function SignIn({ username, title }) {
   return (
     <Layout username={username} title={title}>
-      <h1>Войти в личный кабинет:</h1>
-      <form id="signinForm" method="POST" action="/signin">
-        <div className="form-group">
-          <label htmlFor="username">
-            Логин:
-            <input
-              id="username"
-              className="form-control"
-              name="username"
-              type="text"
-              required
-              pattern="[A-Za-z]\w+"
-              minLength="4"
-              title="Латинские буквы, цифры и _"
-            />
-          </label>
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">
-            Пароль:
-            <input
-              id="password"
-              className="form-control"
-              name="password"
-              type="password"
-              required
-              minLength="5"
-            />
-          </label>
-        </div>
-        <button type="submit" className="btn btn-primary">
+      <h3 className="title-of-signin-form">Войдите, чтобы продолжить:</h3>
+      <form
+        id="signinForm"
+        className="signin-form"
+        method="POST"
+        action="/signin"
+      >
+        <label htmlFor="username">
+          Логин:
+          <input
+            id="username"
+            className="signin-form__input-login"
+            name="username"
+            type="text"
+            required
+            pattern="[A-Za-z]\w+"
+            minLength="4"
+            title="Латинские буквы, цифры и _"
+            placeholder="Введите логин"
+          />
+        </label>
+
+        <label htmlFor="password">
+          Пароль:
+          <input
+            className="signin-form__input-password"
+            id="password"
+            name="password"
+            type="password"
+            required
+            minLength="5"
+            placeholder="Введите пароль"
+          />
+        </label>
+
+        <button type="submit" className="signin-form__button btn btn-primary">
           Войти
         </button>
       </form>
+      <span className="text-question">Впервые на сайте?</span>
+      <a href="/signup" className="signup-link">
+        <span className="signup-link__text">Зарегистрироваться</span>
+        <br />
+      </a>
 
       <script defer src="/js/signin.js" />
     </Layout>

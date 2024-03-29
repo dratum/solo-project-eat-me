@@ -1,20 +1,8 @@
 body {
-	box-sizing: border-box;
-}
-
-.nav {
-	background-color: rgb(175, 181, 181);
-}
-
-.nav-item2 {
-	padding-left: 700px;
-}
-
-.container-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	font-family: "Roboto Condensed", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
 }
 
 .btn-auth {
